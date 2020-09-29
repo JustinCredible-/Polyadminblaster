@@ -1,0 +1,231 @@
+{
+  "id": "56014065-e4f6-4d98-8b70-e778d794ba0f",
+  "version": "2.0",
+  "name": "Polycom",
+  "url": "https://127.0.0.1",
+  "tests": [{
+    "id": "f70dd922-cfbc-475e-957c-aab18e920529",
+    "name": "Polycom admin password change",
+    "commands": [{
+      "id": "9ea9445b-5102-44d7-af26-3bf470be115d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1065cecd-582d-4d84-a7c0-0d37a819d401",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d5c3a91-c011-4b57-b0d6-72cb0656e9f9",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.loginField", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8f0645e-3288-49ad-8fb2-9be33f2aea7a",
+      "comment": "Default/current Admin password",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.loginField", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": "456"
+    }, {
+      "id": "c934262e-18fc-4966-95ed-aa971d2dec99",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(1) > .button",
+      "targets": [
+        ["css=td:nth-child(1) > .button", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "090cd120-361d-46c9-9706-32543ea87c36",
+      "comment": "",
+      "command": "click",
+      "target": "css=#topMenuItem4 > a > span",
+      "targets": [
+        ["css=#topMenuItem4 > a > span", "css:finder"],
+        ["xpath=//li[@id='topMenuItem4']/a/span", "xpath:idRelative"],
+        ["xpath=//ul[2]/li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Settings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c350f59d-4da2-473b-9b36-04455eef5d26",
+      "comment": "",
+      "command": "click",
+      "target": "css=#topMenuItem4 > ul > li:nth-child(14) span",
+      "targets": [
+        ["css=#topMenuItem4 > ul > li:nth-child(14) span", "css:finder"],
+        ["xpath=//li[@id='topMenuItem4']/ul/li[14]/a/span", "xpath:idRelative"],
+        ["xpath=//li[4]/ul/li[14]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Change Password')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64eb76aa-e508-4533-91e8-fd84b4ccadf7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=adminPwdSaveBtn",
+      "targets": [
+        ["id=adminPwdSaveBtn", "id"],
+        ["css=#adminPwdSaveBtn", "css:finder"],
+        ["xpath=//input[@id='adminPwdSaveBtn']", "xpath:attributes"],
+        ["xpath=//div[@id='section']/div/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d8cae6c-2bf7-4cc6-91e9-231e39db4c1e",
+      "comment": "",
+      "command": "click",
+      "target": "id=oldadminpswd",
+      "targets": [
+        ["id=oldadminpswd", "id"],
+        ["name=130", "name"],
+        ["css=#oldadminpswd", "css:finder"],
+        ["xpath=//input[@id='oldadminpswd']", "xpath:attributes"],
+        ["xpath=//div[@id='section']/div/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff46b3ce-9cef-4c6e-a04f-00b3e321f46b",
+      "comment": "Default/current Admin password",
+      "command": "type",
+      "target": "id=oldadminpswd",
+      "targets": [
+        ["id=oldadminpswd", "id"],
+        ["name=130", "name"],
+        ["css=#oldadminpswd", "css:finder"],
+        ["xpath=//input[@id='oldadminpswd']", "xpath:attributes"],
+        ["xpath=//div[@id='section']/div/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "456"
+    }, {
+      "id": "008ee338-ec10-408f-b598-9f8ae50b05bc",
+      "comment": "",
+      "command": "click",
+      "target": "name=newadminpswd",
+      "targets": [
+        ["name=newadminpswd", "name"],
+        ["xpath=//input[@name='newadminpswd']", "xpath:attributes"],
+        ["xpath=//div[@id='section']/div/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4307887-729f-44da-b04d-7c368f99d734",
+      "comment": "New password",
+      "command": "type",
+      "target": "name=newadminpswd",
+      "targets": [
+        ["name=newadminpswd", "name"],
+        ["xpath=//input[@name='newadminpswd']", "xpath:attributes"],
+        ["xpath=//div[@id='section']/div/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "CHANGEME"
+    }, {
+      "id": "0749d340-1c3c-4384-a266-d06ac66745c8",
+      "comment": "",
+      "command": "click",
+      "target": "name=cnfmadminpswd",
+      "targets": [
+        ["name=cnfmadminpswd", "name"],
+        ["xpath=//input[@name='cnfmadminpswd']", "xpath:attributes"],
+        ["xpath=//div[@id='section']/div/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "867fd8e9-4f72-438b-a6f8-2d252ee5d8ce",
+      "comment": "New password",
+      "command": "type",
+      "target": "name=cnfmadminpswd",
+      "targets": [
+        ["name=cnfmadminpswd", "name"],
+        ["xpath=//input[@name='cnfmadminpswd']", "xpath:attributes"],
+        ["xpath=//div[@id='section']/div/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": "CHANGEME"
+    }, {
+      "id": "0bcbe19e-923f-4c9d-93b3-9734b3dda750",
+      "comment": "",
+      "command": "click",
+      "target": "id=adminPwdSaveBtn",
+      "targets": [
+        ["id=adminPwdSaveBtn", "id"],
+        ["css=#adminPwdSaveBtn", "css:finder"],
+        ["xpath=//input[@id='adminPwdSaveBtn']", "xpath:attributes"],
+        ["xpath=//div[@id='section']/div/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1377f671-4b05-474e-83b5-9bbe39e88293",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-popup-actions > .popup-closer",
+      "targets": [
+        ["css=.btn-popup-actions > .popup-closer", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='popupdlg']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Close')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21f0393f-0019-4f24-bc0a-d8df740f7f47",
+      "comment": "",
+      "command": "click",
+      "target": "css=.last-item > span",
+      "targets": [
+        ["css=.last-item > span", "css:finder"],
+        ["xpath=//ul[@id='utility-nav']/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Log Out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc8a57f7-1cd1-44ae-bf6c-e11bc4653d0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c660dd8e-1ee6-49b1-b700-3fe4eed0e2d9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f70dd922-cfbc-475e-957c-aab18e920529"]
+  }],
+  "urls": ["https://127.0.0.1/"],
+  "plugins": []
+}
