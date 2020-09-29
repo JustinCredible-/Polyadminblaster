@@ -15,5 +15,8 @@ Hit Play
 
 Repeat!
 
-
-I'll update this to work headless with a list of IPs supplied by txt file
+Alternatively, if you have Python installed on your system:
+Generate a file called list.txt with the IPs of your Polycom devices, one per line. Save in the same folder as Polyadminblaster.py
+Adjust passwords in Polyadminblaster.py
+pip install selenium
+python Polyadminblaster.py
